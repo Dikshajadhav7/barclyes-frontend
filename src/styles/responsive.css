@@ -1,0 +1,102 @@
+/* ========================
+   RESPONSIVE STYLES
+   ======================== */
+
+/* Tablet and below (1200px) */
+@media (max-width: 1200px) {
+  .main-grid,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .incident-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+}
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+  .top-bar-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .table-container {
+    overflow-x: scroll;
+  }
+
+  .risk-score-number {
+    font-size: 48px;
+  }
+
+  .alert-banner {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .header-badges {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .status-badge,
+  .classification-badge {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* Small Mobile (480px) */
+@media (max-width: 480px) {
+  .app-container {
+    padding: var(--spacing-md);
+  }
+
+  .card {
+    padding: var(--spacing-md);
+  }
+
+  th, td {
+    padding: var(--spacing-sm);
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 32px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .risk-score-number {
+    font-size: 40px;
+  }
+
+  .final-risk-score {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,39 @@
+:root {
+  /* Primary Colors */
+  --primary-blue: #0033A0;
+  --light-blue: #4A90E2;
+  --barclays-cyan: #00AEEF;
+  
+  /* Alert Colors */
+  --critical-red: #D32F2F;
+  --amber: #F57C00;
+  --success-green: #2E7D32;
+  
+  /* Neutral Colors */
+  --grey-50: #FAFAFA;
+  --grey-100: #F5F5F5;
+  --grey-200: #E8E8E8;
+  --grey-300: #D0D0D0;
+  --grey-500: #6B6B6B;
+  --grey-700: #404040;
+  --grey-900: #1A1A1A;
+  --white: #FFFFFF;
+  
+  /* Typography */
+  --font-primary: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
