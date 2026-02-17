@@ -1,20 +1,28 @@
 import React, { useState } from 'react';
-import Navigation from './components/common/Navigation';
-import RealTimeDetection from './components/screen1/RealTimeDetection';
-import IncidentPlaybook from './components/screen2/IncidentPlaybook';
+import IncidentList from './components/incidents/IncidentList';
+import PlaybookView from './components/playbook/PlaybookView';
 import './App.css';
 
 function App() {
-  const [activeScreen, setActiveScreen] = useState(1);
+  const [currentPage, setCurrentPage] = useState('incidents');
+  const [selectedIncident, setSelectedIncident] = useState(null);
+
+  const handleGeneratePlaybook = (incident) => {
+    setSelectedIncident(incident);
+    setCurrentPage('playbook');
+  };
+
+  const handleBack = () => {
+    setCurrentPage('incidents');
+    setSelectedIncident(null);
+  };
 
   return (
     <div className="app-container">
-      <Navigation activeScreen={activeScreen} setActiveScreen={setActiveScreen} />
-      
-      {activeScreen === 1 ? (
-        <RealTimeDetection />
+      {currentPage === 'incidents' ? (
+        <IncidentList onGeneratePlaybook={handleGeneratePlaybook} />
       ) : (
-        <IncidentPlaybook />
+        <PlaybookView incident={selectedIncident} onBack={handleBack} />
       )}
     </div>
   );

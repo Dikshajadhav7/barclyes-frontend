@@ -587,3 +587,399 @@ tbody tr:last-child td {
   font-weight: 600;
   letter-spacing: 0.05em;
 }
+/* ========================
+   PAGE HEADER
+   ======================== */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--grey-200);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--primary-blue);
+  letter-spacing: -0.02em;
+}
+
+/* ========================
+   SEARCH BAR
+   ======================== */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--grey-200);
+  border-radius: 6px;
+  padding: 8px 14px;
+  background: var(--white);
+  width: 280px;
+}
+
+.search-icon {
+  font-size: 14px;
+  color: var(--grey-500);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: var(--grey-900);
+  width: 100%;
+  font-family: var(--font-primary);
+  background: transparent;
+}
+
+.search-input::placeholder {
+  color: var(--grey-300);
+}
+
+/* ========================
+   FILTERS
+   ======================== */
+.filters-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+}
+
+.filter-select {
+  border: 1px solid var(--grey-200);
+  border-radius: 6px;
+  padding: 8px 32px 8px 12px;
+  font-size: 14px;
+  font-family: var(--font-primary);
+  color: var(--grey-700);
+  background: var(--white);
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236B6B6B' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  cursor: pointer;
+  outline: none;
+}
+
+.filter-select:focus {
+  border-color: var(--primary-blue);
+}
+
+/* ========================
+   TABLE CARD
+   ======================== */
+.table-card {
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.table-card table {
+  margin: 0;
+}
+
+.table-card th {
+  padding: 14px 20px;
+}
+
+.table-card td {
+  padding: 16px 20px;
+}
+
+.incident-id-cell {
+  font-weight: 600;
+  color: var(--primary-blue);
+  font-size: 13px;
+}
+
+.asset-tag {
+  background: var(--grey-100);
+  color: var(--grey-700);
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ========================
+   RISK BADGES (Updated)
+   ======================== */
+.risk-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.risk-high {
+  background: #FFEBEE;
+  color: var(--critical-red);
+}
+
+.risk-medium {
+  background: #FFF3E0;
+  color: var(--amber);
+}
+
+.risk-low {
+  background: #E8F5E9;
+  color: var(--success-green);
+}
+
+/* ========================
+   GENERATE BUTTON
+   ======================== */
+.generate-btn {
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-family: var(--font-primary);
+  white-space: nowrap;
+}
+
+.generate-btn:hover {
+  background: #002080;
+}
+
+/* ========================
+   EMPTY STATE
+   ======================== */
+.empty-state {
+  text-align: center;
+  padding: 48px;
+  color: var(--grey-500);
+  font-size: 15px;
+}
+
+/* ========================
+   PAGINATION
+   ======================== */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin-top: 16px;
+}
+
+.pagination-info {
+  font-size: 14px;
+  color: var(--grey-500);
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pagination-btn {
+  border: 1px solid var(--grey-200);
+  background: var(--white);
+  color: var(--grey-700);
+  padding: 7px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.page-number {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-blue);
+  min-width: 24px;
+  text-align: center;
+}
+
+/* ========================
+   PLAYBOOK HEADER
+   ======================== */
+.playbook-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--grey-200);
+}
+
+.playbook-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.back-btn {
+  background: var(--white);
+  border: 1px solid var(--grey-200);
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey-700);
+  cursor: pointer;
+  font-family: var(--font-primary);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.back-btn:hover {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.generated-badge {
+  font-size: 12px;
+  color: var(--grey-500);
+  background: var(--grey-100);
+  padding: 3px 10px;
+  border-radius: 4px;
+  display: block;
+  margin-top: 4px;
+}
+
+/* ========================
+   TWO COLUMN PLAYBOOK
+   ======================== */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.left-col, .right-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================
+   RISK IMPACT SECTION
+   ======================== */
+.risk-impact-section {
+  margin-top: 8px;
+}
+
+.risk-impact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.impact-card {
+  padding: 20px;
+}
+
+.impact-label {
+  font-size: 12px;
+  color: var(--grey-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.impact-value {
+  font-size: 14px;
+  color: var(--grey-900);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.final-risk-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.final-risk-label-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey-700);
+}
+
+.final-score-badge {
+  padding: 8px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.score-high {
+  background: var(--critical-red);
+  color: var(--white);
+}
+
+.score-medium {
+  background: var(--amber);
+  color: var(--white);
+}
+
+.score-low {
+  background: var(--success-green);
+  color: var(--white);
+}
+
+/* ========================
+   RESPONSIVE
+   ======================== */
+@media (max-width: 1024px) {
+  .two-column,
+  .risk-impact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .search-wrapper {
+    width: 100%;
+  }
+  .filters-row {
+    flex-direction: column;
+  }
+}
