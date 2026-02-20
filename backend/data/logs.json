@@ -1,0 +1,75 @@
+{"time":"2026-02-18 02:12:10","usr":"alice","machine":"FIN-PC-01","ip_addr":"185.34.22.11","result":"fail"}
+{"time":"2026-02-18 02:13:02","usr":"alice","machine":"FIN-PC-01","ip_addr":"185.34.22.11","result":"fail"}
+{"time":"2026-02-18 02:14:30","usr":"alice","machine":"FIN-PC-01","ip_addr":"185.34.22.11","result":"success"}
+{"timestamp":"2026-02-18 02:16:01","user":"alice","host":"FIN-PC-01","action":"process_execution","process_name":"powershell.exe"}
+{"time":"2026-02-18 08:55:10","usr":"bob","machine":"HR-PC-02","ip_addr":"10.0.0.45","result":"success"}
+{"timestamp":"2026-02-18 09:01:15","user":"bob","host":"HR-PC-02","action":"process_execution","process_name":"chrome.exe"}
+{"timestamp":"2026-02-18 09:03:22","user":"bob","host":"HR-PC-02","action":"process_execution","process_name":"outlook.exe"}
+
+{"time":"2026-02-18 02:12:10","usr":"alice","machine":"FIN-PC-01","ip_addr":"185.34.22.11","result":"fail"}
+{"time":"2026-02-18 02:12:45","usr":"alice","machine":"FIN-PC-01","ip_addr":"185.34.22.11","result":"fail"}
+{"time":"2026-02-18 02:13:20","usr":"alice","machine":"FIN-PC-01","ip_addr":"185.34.22.11","result":"fail"}
+{"time":"2026-02-18 02:14:30","usr":"alice","machine":"FIN-PC-01","ip_addr":"185.34.22.11","result":"success"}
+{"timestamp":"2026-02-18 02:16:01","user":"alice","host":"FIN-PC-01","action":"process_execution","process_name":"powershell.exe"}
+{"timestamp":"2026-02-18 02:17:11","user":"alice","host":"FIN-PC-01","action":"process_execution","process_name":"cmd.exe"}
+
+{"time":"2026-02-18 23:40:12","usr":"charlie","machine":"ENG-PC-07","ip_addr":"103.54.21.88","result":"success"}
+{"timestamp":"2026-02-18 23:42:18","user":"charlie","host":"ENG-PC-07","action":"process_execution","process_name":"cmd.exe"}
+{"timestamp":"2026-02-18 23:43:02","user":"charlie","host":"ENG-PC-07","action":"process_execution","process_name":"powershell.exe"}
+{"timestamp":"2026-02-18 23:45:33","user":"charlie","host":"ENG-PC-07","action":"process_execution","process_name":"net.exe"}
+
+{"time":"2026-02-18 11:20:10","usr":"david","machine":"SALES-PC-03","ip_addr":"10.0.0.78","result":"success"}
+{"timestamp":"2026-02-18 11:22:45","user":"david","host":"SALES-PC-03","action":"process_execution","process_name":"excel.exe"}
+
+{"time":"2026-02-18 03:10:01","usr":"alice","machine":"FIN-PC-01","ip_addr":"185.34.22.11","result":"success"}
+{"timestamp":"2026-02-18 03:12:17","user":"alice","host":"FIN-PC-01","action":"process_execution","process_name":"powershell.exe"}
+
+{"time":"2026-02-18 14:05:55","usr":"emma","machine":"HR-PC-09","ip_addr":"10.0.0.90","result":"success"}
+{"timestamp":"2026-02-18 14:07:33","user":"emma","host":"HR-PC-09","action":"process_execution","process_name":"teams.exe"}
+{"timestamp":"2026-02-18 14:09:48","user":"emma","host":"HR-PC-09","action":"process_execution","process_name":"chrome.exe"}
+
+{"time":"2026-02-18 02:25:14","usr":"unknown","machine":"FIN-PC-01","ip_addr":"200.12.45.77","result":"fail"}
+{"time":"2026-02-18 02:25:40","usr":"unknown","machine":"FIN-PC-01","ip_addr":"200.12.45.77","result":"fail"}
+{"time":"2026-02-18 02:26:02","usr":"unknown","machine":"FIN-PC-01","ip_addr":"200.12.45.77","result":"fail"}
+{"time":"2026-02-18 08:45:10","usr":"bob","machine":"HR-PC-02","ip_addr":"10.0.0.45","result":"success"}
+{"timestamp":"2026-02-18 08:47:21","user":"bob","host":"HR-PC-02","action":"process_execution","process_name":"chrome.exe"}
+{"timestamp":"2026-02-18 08:50:02","user":"bob","host":"HR-PC-02","action":"file_access","file_name":"payroll.xlsx"}
+
+{"time":"2026-02-18 02:12:10","usr":"alice","machine":"FIN-PC-01","ip_addr":"185.34.22.11","result":"fail"}
+{"time":"2026-02-18 02:12:40","usr":"alice","machine":"FIN-PC-01","ip_addr":"185.34.22.11","result":"fail"}
+{"time":"2026-02-18 02:13:15","usr":"alice","machine":"FIN-PC-01","ip_addr":"185.34.22.11","result":"fail"}
+{"time":"2026-02-18 02:14:05","usr":"alice","machine":"FIN-PC-01","ip_addr":"185.34.22.11","result":"success"}
+{"timestamp":"2026-02-18 02:15:33","user":"alice","host":"FIN-PC-01","action":"process_execution","process_name":"powershell.exe"}
+{"timestamp":"2026-02-18 02:17:10","user":"alice","host":"FIN-PC-01","action":"network_connection","destination_ip":"10.0.0.12"}
+
+{"time":"2026-02-18 23:40:12","usr":"charlie","machine":"ENG-PC-07","ip_addr":"103.54.21.88","result":"success"}
+{"timestamp":"2026-02-18 23:42:18","user":"charlie","host":"ENG-PC-07","action":"process_execution","process_name":"cmd.exe"}
+{"timestamp":"2026-02-18 23:43:02","user":"charlie","host":"ENG-PC-07","action":"process_execution","process_name":"net.exe"}
+{"timestamp":"2026-02-18 23:45:50","user":"charlie","host":"ENG-PC-07","action":"network_connection","destination_ip":"10.0.0.22"}
+
+{"time":"2026-02-18 09:30:12","usr":"admin","machine":"DC-01","ip_addr":"10.0.0.1","result":"success"}
+{"timestamp":"2026-02-18 09:31:33","user":"admin","host":"DC-01","action":"privilege_change","new_role":"domain_admin"}
+{"timestamp":"2026-02-18 09:33:21","user":"admin","host":"DC-01","action":"process_execution","process_name":"regedit.exe"}
+
+{"timestamp":"2026-02-18 10:15:44","user":"emma","host":"HR-PC-09","action":"usb_insert","device_id":"USB-44321"}
+{"timestamp":"2026-02-18 10:16:10","user":"emma","host":"HR-PC-09","action":"file_copy","file_name":"employees.db"}
+
+{"timestamp":"2026-02-18 11:02:11","user":"david","host":"SALES-PC-03","action":"process_execution","process_name":"excel.exe"}
+{"timestamp":"2026-02-18 11:03:55","user":"david","host":"SALES-PC-03","action":"file_access","file_name":"clients.csv"}
+{"timestamp":"2026-02-18 11:05:12","user":"david","host":"SALES-PC-03","action":"file_access","file_name":"clients_backup.csv"}
+
+{"time":"2026-02-18 03:05:12","usr":"unknown","machine":"FIN-PC-01","ip_addr":"200.12.45.77","result":"fail"}
+{"time":"2026-02-18 03:05:40","usr":"unknown","machine":"FIN-PC-01","ip_addr":"200.12.45.77","result":"fail"}
+{"time":"2026-02-18 03:06:10","usr":"unknown","machine":"FIN-PC-01","ip_addr":"200.12.45.77","result":"fail"}
+
+{"timestamp":"2026-02-18 14:20:55","user":"scanner","host":"ENG-PC-02","action":"network_scan","destination_ip":"10.0.0.1"}
+{"timestamp":"2026-02-18 14:21:12","user":"scanner","host":"ENG-PC-02","action":"network_scan","destination_ip":"10.0.0.2"}
+{"timestamp":"2026-02-18 14:21:33","user":"scanner","host":"ENG-PC-02","action":"network_scan","destination_ip":"10.0.0.3"}
+
+{"timestamp":"2026-02-18 16:40:22","user":"bob","host":"HR-PC-02","action":"process_execution","process_name":"malware.exe"}
+{"timestamp":"2026-02-18 16:41:10","user":"bob","host":"HR-PC-02","action":"network_connection","destination_ip":"185.199.110.153"}
+
+{"timestamp":"2026-02-18 17:12:44","user":"emma","host":"HR-PC-09","action":"file_access","file_name":"salary_2026.xlsx"}
+{"timestamp":"2026-02-18 17:13:10","user":"emma","host":"HR-PC-09","action":"file_access","file_name":"confidential_notes.docx"}
+
+{"timestamp":"2026-02-18 18:55:12","user":"admin","host":"DC-01","action":"account_disable","target_user":"alice"}

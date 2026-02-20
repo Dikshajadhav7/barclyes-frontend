@@ -1,0 +1,190 @@
+[
+  {
+    "incident_id": "INC-001",
+    "incident_type": "Credential Compromise",
+    "severity": "High",
+    "fidelity_score": 0.93,
+    "affected_user": "alice",
+    "affected_host": "FIN-PC-01",
+    "time_window": {
+      "start": "18-02-2026 02:12",
+      "end": "18-02-2026 02:17"
+    },
+    "indicators": [
+      "Multiple failed login attempts",
+      "Successful login after failures",
+      "After-hours authentication",
+      "PowerShell execution",
+      "Command execution",
+      "External IP source"
+    ],
+    "correlated_events": [
+      {
+        "timestamp": "18-02-2026 02:12",
+        "event_type": "login_failure",
+        "source_ip": "185.34.22.11",
+        "status": "fail"
+      },
+      {
+        "timestamp": "18-02-2026 02:14",
+        "event_type": "login_success",
+        "source_ip": "185.34.22.11",
+        "status": "success"
+      },
+      {
+        "timestamp": "18-02-2026 02:16",
+        "event_type": "process_execution",
+        "process_name": "powershell.exe"
+      },
+      {
+        "timestamp": "18-02-2026 02:17",
+        "event_type": "process_execution",
+        "process_name": "cmd.exe"
+      }
+    ]
+  },
+
+  {
+    "incident_id": "INC-002",
+    "incident_type": "Active Brute Force Attack",
+    "severity": "Critical",
+    "fidelity_score": 0.97,
+    "affected_user": "unknown",
+    "affected_host": "FIN-PC-01",
+    "time_window": {
+      "start": "18-02-2026 02:25",
+      "end": "18-02-2026 03:06"
+    },
+    "indicators": [
+      "Repeated login failures",
+      "100% authentication failure rate",
+      "External IP source",
+      "After-hours activity"
+    ],
+    "correlated_events": [
+      {
+        "timestamp": "18-02-2026 02:25",
+        "event_type": "login_failure",
+        "source_ip": "200.12.45.77",
+        "status": "fail"
+      },
+      {
+        "timestamp": "18-02-2026 02:26",
+        "event_type": "login_failure",
+        "source_ip": "200.12.45.77",
+        "status": "fail"
+      },
+      {
+        "timestamp": "18-02-2026 03:05",
+        "event_type": "login_failure",
+        "source_ip": "200.12.45.77",
+        "status": "fail"
+      }
+    ]
+  },
+
+  {
+    "incident_id": "INC-003",
+    "incident_type": "Suspicious Administrative Activity",
+    "severity": "High",
+    "fidelity_score": 0.84,
+    "affected_user": "charlie",
+    "affected_host": "ENG-PC-07",
+    "time_window": {
+      "start": "18-02-2026 23:40",
+      "end": "18-02-2026 23:45"
+    },
+    "indicators": [
+      "After-hours login",
+      "PowerShell execution",
+      "Command Prompt execution",
+      "Network utility execution"
+    ],
+    "correlated_events": [
+      {
+        "timestamp": "18-02-2026 23:40",
+        "event_type": "login_success",
+        "source_ip": "103.54.21.88"
+      },
+      {
+        "timestamp": "18-02-2026 23:42",
+        "event_type": "process_execution",
+        "process_name": "cmd.exe"
+      },
+      {
+        "timestamp": "18-02-2026 23:43",
+        "event_type": "process_execution",
+        "process_name": "powershell.exe"
+      },
+      {
+        "timestamp": "18-02-2026 23:45",
+        "event_type": "process_execution",
+        "process_name": "net.exe"
+      }
+    ]
+  },
+
+  {
+    "incident_id": "INC-004",
+    "incident_type": "Internal Reconnaissance",
+    "severity": "Medium",
+    "fidelity_score": 0.68,
+    "affected_user": "scanner",
+    "affected_host": "ENG-PC-02",
+    "time_window": {
+      "start": "18-02-2026 14:20",
+      "end": "18-02-2026 14:21"
+    },
+    "indicators": [
+      "Multiple internal IP connections",
+      "Rapid sequential activity",
+      "Automated scanning behavior"
+    ],
+    "correlated_events": [
+      {
+        "timestamp": "18-02-2026 14:20",
+        "event_type": "connection_attempt",
+        "destination_ip": "10.0.0.1"
+      },
+      {
+        "timestamp": "18-02-2026 14:21",
+        "event_type": "connection_attempt",
+        "destination_ip": "10.0.0.2"
+      },
+      {
+        "timestamp": "18-02-2026 14:21",
+        "event_type": "connection_attempt",
+        "destination_ip": "10.0.0.3"
+      }
+    ]
+  },
+
+  {
+    "incident_id": "INC-005",
+    "incident_type": "Possible Malware Infection",
+    "severity": "High",
+    "fidelity_score": 0.89,
+    "affected_user": "bob",
+    "affected_host": "HR-PC-02",
+    "time_window": {
+      "start": "18-02-2026 16:40",
+      "end": "18-02-2026 16:41"
+    },
+    "indicators": [
+      "Execution of malware.exe",
+      "External IP communication"
+    ],
+    "correlated_events": [
+      {
+        "timestamp": "18-02-2026 16:40",
+        "event_type": "process_execution",
+        "process_name": "malware.exe"
+      },
+      {
+        "timestamp": "18-02-2026 16:41",
+        "event_type": "external_connection",
+        "destination_ip": "185.199.110.153"
+      }
+    ]
+  }
+]
